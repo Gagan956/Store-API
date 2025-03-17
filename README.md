@@ -8,7 +8,7 @@ A simple store API with CRUD operations, pagination, and filtering.
 
 Method: POST
 
-URL: http://localhost:5000/api/tasks
+URL: http://localhost:3000/api/tasks
 
 Headers: Content-Type: application/json
 
