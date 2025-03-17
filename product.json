@@ -1,0 +1,50 @@
+  [
+        {
+      "title": "Organic Apples",
+      "description": "Fresh and juicy organic apples sourced from local farms.",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "title": "Whole Wheat Bread",
+      "description": "Healthy whole wheat bread with no added preservatives.",
+      "status": "completed",
+      "priority": "medium"
+    },
+    {
+      "title": "Brown Basmati Rice",
+      "description": "Long-grain brown basmati rice, rich in fiber and nutrients.",
+      "status": "pending",
+      "priority": "low"
+    },
+    {
+      "title": "Fresh Milk",
+      "description": "Pure and fresh cow milk, pasteurized and rich in calcium.",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
+      "title": "Free-Range Eggs",
+      "description": "Farm-fresh free-range eggs, packed with protein and essential nutrients.",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "title": "Almond Butter",
+      "description": "Creamy almond butter made from 100% roasted almonds, no added sugar.",
+      "status": "completed",
+      "priority": "low"
+    },
+    {
+      "title": "Fresh Spinach",
+      "description": "Organic fresh spinach, rich in iron and vitamins.",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "title": "Olive Oil",
+      "description": "Cold-pressed extra virgin olive oil for healthy cooking.",
+      "status": "completed",
+      "priority": "medium"
+    }
+  ]
