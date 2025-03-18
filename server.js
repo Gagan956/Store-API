@@ -7,6 +7,13 @@ const connectDB = require('./db/connect');
 const notFoundMiddleware = require('./middleware/not-found');
 const taskroutes = require('./routes/taskRouter')
 const rateLimit = require("express-rate-limit");
+const Redis = require('ioredis');
+
+const redisClient = new Redis({
+    host: 'localhost', // Use 'redis' if running in Docker Compose
+    port: 6379
+});
+
 
 
 
@@ -19,6 +26,8 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable deprecated headers
 });
 
+
+
 app.use(limiter); 
 
 // middleware
@@ -29,7 +38,11 @@ app.get('/', (req, res) => {
   res.send('<h1>Store API</h1><a href="/api/v1/products">products route</a>');
 });
 
-app.use('/api/tasks', taskroutes);
+app.use('/api/tasks',
+  (req, res, next) => {
+    req.redisClient = redisClient;
+    next();
+   }, taskroutes);
 
 // products route
 

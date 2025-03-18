@@ -15,7 +15,9 @@
     "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
     "express-rate-limit": "^7.5.0",
-    "mongoose": "^8.12.1"
+    "ioredis": "^5.6.0",
+    "mongoose": "^8.12.1",
+    "rate-limit-redis": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
